@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1089611272324",
+    "firebase_url": "https://fir-chat-for-django.firebaseio.com",
+    "project_id": "fir-chat-for-django",
+    "storage_bucket": "fir-chat-for-django.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089611272324:android:cecfa0f31fc6a5a5f4b2d1",
+        "android_client_info": {
+          "package_name": "com.cyberveda.client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089611272324-8oqmguh9bkat0jjatigqh3uqo85oqtj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDouWJtK8h0-boPvTpQAcilF8P4Vp4zwmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089611272324-8oqmguh9bkat0jjatigqh3uqo85oqtj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089611272324:android:b8727635fc0ca98af4b2d1",
+        "android_client_info": {
+          "package_name": "com.resocoder.firemessage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089611272324-8oqmguh9bkat0jjatigqh3uqo85oqtj1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDouWJtK8h0-boPvTpQAcilF8P4Vp4zwmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089611272324-8oqmguh9bkat0jjatigqh3uqo85oqtj1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

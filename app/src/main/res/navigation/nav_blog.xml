@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/nav_blog"
+        app:startDestination="@id/blogFragment"
+        >
+
+    <fragment android:id="@+id/blogFragment"
+            android:name="com.cyberveda.client.ui.main.blog.BlogFragment"
+            android:label="@string/fragment_blog"
+            tools:layout="@layout/fragment_blog">
+
+
+        <action android:id="@+id/action_blogFragment_to_viewBlogFragment"
+                app:destination="@id/viewBlogFragment"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                />
+        <action
+            android:id="@+id/action_blogFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+
+
+    </fragment>
+
+    <fragment android:id="@+id/viewBlogFragment"
+            android:name="com.cyberveda.client.ui.main.blog.ViewBlogFragment"
+            android:label="@string/fragment_view_blog"
+            tools:layout="@layout/fragment_view_blog">
+
+
+        <action android:id="@+id/action_viewBlogFragment_to_updateBlogFragment"
+                app:destination="@id/updateBlogFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+                />
+
+        <action
+                android:id="@+id/action_viewBlogFragment_to_home"
+                app:destination="@id/blogFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popUpTo="@+id/nav_blog"
+                app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment android:id="@+id/updateBlogFragment"
+            android:name="com.cyberveda.client.ui.main.blog.UpdateBlogFragment"
+            android:label="@string/fragment_update_blog"
+            tools:layout="@layout/fragment_update_blog">
+
+        <action
+                android:id="@+id/action_updateBlogFragment_to_home"
+                app:destination="@id/blogFragment"
+                app:popEnterAnim="@anim/fade_in"
+                app:popExitAnim="@anim/fade_out"
+                app:enterAnim="@anim/fade_in"
+                app:exitAnim="@anim/fade_out"
+                app:popUpTo="@+id/nav_blog"
+                app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.cyberveda.client.ui.main.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_createFeedbackFragment"
+            app:destination="@id/createFeedbackFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_updateAccountFragment"
+            app:destination="@id/updateAccountFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_accountFragment_to_blogFragment"
+            app:destination="@id/blogFragment"
+            app:popUpTo="@id/nav_blog"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/createFeedbackFragment"
+        android:name="com.cyberveda.client.ui.main.create_feedback.CreateFeedbackFragment"
+        android:label="fragment_create_feedback"
+        tools:layout="@layout/fragment_create_feedback" >
+        <action
+            android:id="@+id/action_createFeedbackFragment_to_accountFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_createFeedbackFragment_to_blogFragment"
+            app:destination="@id/blogFragment"
+            app:popUpTo="@id/nav_blog"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateAccountFragment"
+        android:name="com.cyberveda.client.ui.main.account.UpdateAccountFragment"
+        android:label="fragment_update_account"
+        tools:layout="@layout/fragment_update_account" >
+        <action
+            android:id="@+id/action_updateAccountFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/accountFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_updateAccountFragment_to_blogFragment"
+            app:destination="@id/blogFragment"
+            app:popUpTo="@id/nav_blog"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.cyberveda.client.ui.main.account.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_accountFragment"
+            app:destination="@id/accountFragment"
+            app:popUpTo="@id/accountFragment"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_changePasswordFragment_to_blogFragment"
+            app:destination="@id/blogFragment"
+            app:popUpTo="@id/nav_blog"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

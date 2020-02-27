@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main theme colors -->
+    <color name="colorPrimary">#74b9ff</color>
+    <color name="colorPrimaryDark">#7d7d7d</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Secondary theme colors -->
+    <color name="tealDark">#0094DE</color>
+    <color name="tealLight">#9FDAF7</color>
+    <color name="link_blue">#0000EE</color>
+
+    <!-- other -->
+    <color name="red">#e22b2b</color>
+    <color name="red2">#fc8b8d</color>
+    <color name="grey1">#f2f2f2</color>
+    <color name="grey2">#c4c4c4</color>
+    <color name="grey3">#a8a8a8</color>
+    <color name="grey4">#7d7d7d</color>
+    <color name="grey5">#5c5c5c</color>
+
+    <color name="default_background_color">#EEEEEE</color>
+
+    <color name="grey_300">#E0E0E0</color>
+    <color name="malibu">#64B5F6</color>
+    <color name="flatblue">#74b9ff</color>
+
+
+
+
+
+    <color name="primaryColorMessaging">#b39ddb</color>
+    <color name="primaryDarkColorMessaging">#836fa9</color>
+    <color name="secondaryColorMessaging">#bdbdbd</color>
+    <color name="secondaryLightColorMessaging">#efefef</color>
+    <color name="primaryTextColorMessaging">#000000</color>
+    <color name="secondaryTextColorMessaging">#000000</color>
+    <color name="redMessaging">#EE4B4B</color>
+    <color name="whiteMessaging">#FFFFFF</color>
+    <color name="blueMessaging">#3F51B5</color>
+    <color name="greyMessaging">#ACACAC</color>
+    <color name="semi_visibile_bgMessaging">#80ACACAC</color>
+    <color name="greenMessaging">#61B163</color>
+
+</resources>
